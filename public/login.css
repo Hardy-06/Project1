@@ -1,0 +1,176 @@
+body {
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 1;
+}
+
+.logo-container {
+  text-align: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.logo {
+  text-align: center;
+  width: 15vh;
+}
+.logo-container:hover {
+  animation: flipV 2s linear;
+}
+
+@keyframes flipV {
+  50% {
+    transform: rotateY(180deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
+.form-box {
+  width: 380px;
+  height: 580px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 6% auto;
+  background: rgb(253 153 38);
+  overflow: hidden;
+}
+.button-box {
+  width: 60%;
+  position: relative;
+  box-shadow: 0 0 20px 9px white;
+  border-radius: 30px;
+  margin: auto;
+  top: -100px;
+}
+.toggle-btn {
+  padding: 10px 30px;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  color: white;
+  outline: none;
+  position: relative;
+}
+
+#btn {
+  top: 0;
+  left: 0;
+  width: 52%;
+  height: 100%;
+  background: black;
+  position: absolute;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+
+.social-icons {
+  margin: 100px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-group {
+  top: 180px;
+  position: absolute;
+  width: 280px;
+  transition: 0.5s;
+}
+.input-field {
+  width: 100%;
+  padding-top: 1px;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 1px solid #777;
+  outline: none;
+  background: transparent;
+}
+.remove-margin {
+  margin: 0;
+}
+.submit-btn {
+  width: 85%;
+  padding: 10px 30px;
+  cursor: pointer;
+  display: block;
+  margin: auto;
+  margin-top: 10px;
+  background: black;
+  border: 0;
+  outline: none;
+  border-radius: 30px;
+}
+.text {
+  color: white;
+  font-display: 50px;
+  margin: auto;
+}
+.gender-line {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  margin: auto;
+  margin: 10px auto;
+}
+/* #m:active {
+  background-color: #333;
+  color: white;
+}
+#f:hover {
+  background-color: #333;
+  color: white; */
+/* } */
+.check-box {
+  display: flex;
+  margin: auto;
+}
+
+.line {
+  color: #777;
+  display: flex;
+  justify-content: space-between;
+  margin: 1px 10px 9px 10px;
+  font-size: 12px;
+  bottom: 30px;
+}
+
+#login {
+  left: 60px;
+}
+
+#register {
+  left: 450px;
+}
+
+#text {
+  color: #777;
+  font-size: 15px;
+  margin-left: 10em;
+  margin-top: -1em;
+}
+
+.flash {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: linear-gradient(0deg, transparent, rgb(253 153 38), black);
+  animation: animate 6s linear infinite;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(0deg);
+  }
+  100% {
+    transform: rotateX(180deg);
+  }
+}

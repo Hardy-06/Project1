@@ -1,0 +1,40 @@
+.select {
+  display: flex;
+  justify-content: space-around;
+  border-radius: 50%;
+}
+.form {
+  height: 300px;
+  margin: 80px;
+}
+.profile-pic {
+  height: 120px;
+  width: 120px;
+  left: 50%;
+  display: flex;
+  justify-content: center;
+  /* transform: translateX(-50%); */
+  top: 0px;
+  padding: 10px;
+  border-radius: 50%;
+}
+.profile-pic img {
+  border-radius: 50%;
+  justify-content: center;
+  box-shadow: 0px 0px 5px 0px #c1c1c1;
+  width: 100px;
+  height: 100px;
+}
+
+#photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#editBtn {
+  display: flex;
+  margin: auto;
+  font-size: 40px;
+  color: rgb(253 153 38);
+}

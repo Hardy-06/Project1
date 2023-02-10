@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Create Room</title>
+    <link rel="stylesheet" href="createRoom.css" />
+  </head>
+  <body>
+    <form action="/demo" method="post">
+      <label for="topic">Topic</label>
+      <input type="text" name="content" id="topic" required />
+      <label for="password">Password(optional): </label>
+      <div><input type="text" name="password" id="password" /></div>
+      <div class="head-count">
+        <label for="headNumber">房間人數：</label>
+        <select name="headNumber" id="headNumber" required>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="5">5</option>
+          <option value="10">10</option>
+        </select>
+      </div>
+      <div class="timer">
+        <label for="addTime">房間限時：</label>
+        <select name="addTime" id="addTime" required>
+          <option value="5">5</option>
+          <option value="10">10</option>
+          <option value="30">30</option>
+          <option value="60">60</option>
+          <option value="99">No Limit</option>
+        </select>
+      </div>
+      <div class="category">
+        <label for="category">主題：</label>
+        <select name="category" id="category" required>
+          <option value="1">吹水台</option>
+          <option value="2">心事台</option>
+          <option value="3">體育台</option>
+          <option value="4">電玩台</option>
+        </select>
+      </div>
+
+      <button type="submit" onclick="submit()">Submit</button>
+    </form>
+    <script src="createRoom.js"></script>
+  </body>
+</html>
